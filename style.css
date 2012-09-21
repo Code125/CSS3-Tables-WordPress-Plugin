@@ -1,0 +1,203 @@
+@import url("colors.css");
+
+
+/****************************************************/
+/*****************Font Settings*******************/
+/****************************************************/
+
+@font-face {
+    font-family: 'ChunkFiveRegular';
+    src: url('../fonts/ChunkFive-fontfacekit/Chunkfive-webfont.eot');
+    src: url('../fonts/ChunkFive-fontfacekit/Chunkfive-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ChunkFive-fontfacekit/Chunkfive-webfont.woff') format('woff'),
+        url('../fonts/ChunkFive-fontfacekit/Chunkfive-webfont.ttf') format('truetype'),
+        url('../fonts/ChunkFive-fontfacekit/Chunkfive-webfont.svg#ChunkFiveRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family:"Aftasans";
+    src:url("../fonts/Aftasans/AftaSansThin-Regular.eot?") format("eot"),
+        url("../fonts/Aftasans/AftaSansThin-Regular.woff") format("woff"),
+        url("../fonts/Aftasans/AftaSansThin-Regular.ttf") format("truetype"),
+        url("../fonts/Aftasans/AftaSansThin-Regular.svg#Aftasans") format("svg");
+    font-weight:lighter;
+    font-style:normal;
+}
+
+/****************************************************/
+/*****************General Settings*******************/
+/****************************************************/
+
+table.table_01{
+    margin-top:40px;
+    margin-bottom: 20px;
+}
+
+
+table.table_01 td{
+    height: 40px;
+    line-height:40px;
+    width: 180px;
+    text-align: center;
+    border:none;
+
+    /*Animation*/
+    -moz-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in ;
+    -webkit-transition: all .3s ease-in ;
+    -ms-transition: all .3s ease-in ;
+    transition:all .3s ease-in;
+}
+
+
+
+.hide{
+    text-indent:-9999px;
+    background: transparent !important;
+}
+
+
+
+tr.col_title td{
+    height: 200px !important;
+    line-height: 100%;
+}
+
+tr.col_title td hgroup h1{
+    font: 30px "Lucida Grande", Lucida, Verdana, sans-serif;
+    margin: 0px;
+    color: white;
+}
+
+tr.col_title td hgroup h2{
+    font-size: 40px;
+    font-family: 'ChunkFiveRegular',Helvetica,Arial;
+    line-height: 150%;
+    margin: 0px;
+    color: white;
+}
+
+tr.col_title td hgroup h3{
+    font: 14px "Lucida Grande", Lucida, Verdana, sans-serif;
+    letter-spacing: 9px;
+    margin: -10px 0px 0px 0px;
+    text-align: center;
+    color: white;
+}
+
+.col:hover .col_title{
+    -webkit-animation:title_anmiation 0.7s linear forwards; 
+    -moz-animation: 0.7s linear normal forwards 1 title_anmiation;
+    -webkit-animation-iteration-count:3;
+    -moz-animation-iteration-count:3;
+    animation-iteration-count:3;
+}
+
+@-webkit-keyframes title_anmiation {
+    0%{margin-top: 0px;margin-bottom: 0px;}
+40%{margin-top: -30px;margin-bottom: 30px;}
+60%{margin-top: -30px;margin-bottom: 30px;}
+100%{margin-top: 0px;margin-bottom: 0px;}
+}
+
+@-moz-keyframes title_anmiation {
+    0%{margin-top: 0px;margin-bottom: 0px;}
+30%{margin-top: -30px;margin-bottom: 30px;}
+70%{margin-top: -30px;margin-bottom: 30px;}
+100%{margin-top: 0px;margin-bottom: 0px;}
+}
+
+
+/* ---Default ----- */
+
+tr.col_title td hgroup{
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+
+    height: 100px;
+    line-height: 20px;
+    width: 140px;
+    margin-left: 20px;
+}
+
+tr.col_title td p{
+    border-style:solid;
+    border-width:75px;
+    height:0;
+    width:0px;
+    text-indent: -9999px;
+
+    margin-left: 25px;
+    margin-top: -2px;
+
+    /*Animation*/
+    -moz-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in ;
+    -webkit-transition: all .3s ease-in ;
+    -ms-transition: all .3s ease-in ;
+    transition:all .3s ease-in;
+}
+tr.odd td{
+    font-family: "Aftasans",helvetica,arial;
+    -moz-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+    -ms-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+
+tr.even td{
+    font-family: "Aftasans",helvetica,arial;
+    -moz-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+    -ms-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+tr.table_button td{
+    height: 80px;
+    background: #FAFAFA;
+
+}
+
+tr.table_button td a{
+    border-radius: 10px;
+    margin-left: 10px;
+    top: 15px;
+    position: relative;
+    display: block;
+    margin-right: 10px;
+    text-decoration:none;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+
+    color: white;
+    font: bold 20px "helvetica neue", helvetica, arial, sans-serif;
+    line-height: 1;
+    padding: 12px 0 14px 0;
+    text-align: center;
+    text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.8);
+    width: 150px;
+
+
+}
+
+
+
+tr.table_button td a:active {
+    background-color: #ecdddd;
+}
+
